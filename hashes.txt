@@ -1,0 +1,16 @@
+# APOB (NP_000375.2) — 13 product SHA-256 hashes
+# anchor these to a public timestamp for prior-art proof
+
+f4426ab3dd09faafc8c2bd05904d49e48870d03979d9685bfe96bd170281fd2e  core  (Apobomitos · Core)
+fd128147807e91de8e093eca705a9244eadbdc3142ae2aacdffbfb540eb81b95  folded  (Apobomitos · Folded)
+94215183463f760f7dae7fc007462f49a101a2f3759ea161410c09e85c271605  bio  (Apobomitos · Bio)
+d5931fbda249997e20f143811a64282eee249be6376957c76bc06e383c6f9b4c  signal  (Apobomitos · Signal)
+cded8b612301f7ba6a4968c0f7d58baa1d8230f36835cc4a27db6f36b74e08a6  dark_matter  (Apobomitos · Dark Matter)
+4065cc636afdb54789b0672e45932f27d147e31f93b4c420efa6c25c979394aa  working  (The Cholesterol Thread · Working Code)
+a650d89d6ef67ac1dd625b0caff74851b2c5cdcd473caf7163bb7d5f392eea03  per  (The Hidden Rhythm — periodicity)
+6f784eb3b4823f6c8993f36136b74db1686c837a5ab31510a5f477bd980935ae  stx  (The Shape — secondary structure)
+8f31489583c4b797aeffe31e141c5ab0fc76ec3bf1bd8abf992acf46881274c1  thr  (The Stability — thermal stability)
+964eb6397689c9aa75f47bdeac2c26bc7192faf4cd3bae992ffa69afc5aa6a3c  reg  (The Switch — regulatory motifs)
+7231965e53c248133d257f8ee7ea920446047d5c4440bdc7b35864b29191a2ba  ent  (The Message — information entropy)
+6be5b01fdee9daa18de9a6c712b6a6475a8f8a6001511d060f425c421e179ef3  fou  (The Spectrum — Fourier spectrum)
+608a2cdea955e19689b83c450ed676791d9823d97ebea882aced2a1b237dcb46  nuc  (The Winding — nucleosome periodicity)
