@@ -1,0 +1,2 @@
+# Lock LF line endings so hashes.txt.ots stays byte-exact with hashes.txt
+* text=auto eol=lf
