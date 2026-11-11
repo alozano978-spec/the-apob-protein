@@ -18,8 +18,7 @@ numbers reproducible on any machine.
 > new-to-market methodology of folding and measuring — is already finished.
 
 <p align="center">
-  <video src="assets/apob.mp4" width="800" autoplay loop muted playsinline
-         alt="The ApoB-100 protein refolding from disordered to ordered"></video>
+  <img src="assets/apob.gif" width="800" alt="The ApoB-100 protein refolding from disordered to ordered">
 </p>
 
 > Part of the **APOBOMITOS** line — the full read of the lipid-transport
