@@ -25,7 +25,7 @@ numbers reproducible on any machine.
 > proteins — at [panmitos.com](https://panmitos.com/).
 ## The claim, in one line
 
-The raw ApoB-100 protein, converted to DNA, measures a **spectral gap of
+The raw ApoB-100 sequence, read and back-translated through the genetic code into DNA, measures a **spectral gap of
 −0.085** (disordered). After an additive, non-destructive fold through the
 **5-D SPIRAL**, every strand of **hybrid DNA** measures **positive** (ordered).
 
@@ -45,7 +45,7 @@ a value that is zero for random sequence and nonzero for structure.
 
 ## What's in this repo
 
-- `data/apob_base.dna` — the raw protein converted to DNA (the "before").
+- `data/apob_base.dna` — the raw sequence, read and back-translated into DNA (the "before").
 - `data/strands/*.dna` — the corrected strands (the "after"), one file each.
 - `data/strands.json` — full metadata for all 13 products.
 - `hashes.txt` — the 13 SHA-256 hashes (prior-art anchor, see below).
