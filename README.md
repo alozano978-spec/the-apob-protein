@@ -1,52 +1,87 @@
-# APOB — the heart-disease protein, read to order
+# APOB — measured, folded, released
 
 **APOB** (NP_000375.2) is apolipoprotein B-100 — the sole protein of LDL,
 the "bad cholesterol" particle. It is the structural scaffold that carries
-cholesterol through the bloodstream, and it sits at the center of the
-world's leading cause of death. Full-length ApoB-100 (4,563 amino acids) has
-**never been solved** — for fifty years, only fragments have yielded to
-structural biology. It is the amphipathic white whale of the field.
+cholesterol through the bloodstream, and it sits at the center of the world's
+leading cause of death. Full-length ApoB-100 (4,563 amino acids) remains
+structurally unsolved.
 
-This repository is the full read of APOB, released for anyone to verify:
-**13 products**, from the raw protein to the folded strand — measured
-base-for-base, folded into a **5-D SPIRAL** fold of **hybrid DNA** — with the
-numbers reproducible on any machine.
+**We did not solve it.** We back-translated its amino-acid sequence to DNA,
+measured the spectral gap, folded the strand, and released the result. That is
+the extent of the claim.
 
-> **Drop-in ready.** The reading is done. The folding is done. The verification
-> is done. You just print the letters — the strand is a finished DNA sequence,
-> ready for any gene-synthesis service to synthesize. The hard part — the
-> new-to-market methodology of folding and measuring — is already finished.
+This repository is a measurement of APOB: the sequence back-translated to DNA,
+its spectral gap measured, the strand folded through a deterministic
+**5-D SPIRAL**, and the resulting **hybrid DNA** sequences released for anyone
+to synthesize. **13 products**, reproducible on any machine with one script.
+
+> **Drop-in ready.** The strand is a finished DNA sequence — print the letters
+> and hand them to any gene-synthesis service. Nothing to recalibrate: the
+> back-translation, the measurement, and the fold are already done. You
+> synthesize, then you test.
 
 <p align="center">
-  <img src="assets/apob.gif" width="800" alt="The ApoB-100 protein refolding from disordered to ordered">
+  <img src="assets/apob.gif" width="800" alt="The ApoB-100 strand, folded through the 5-D spiral">
 </p>
 
-> Part of the **APOBOMITOS** line — the full read of the lipid-transport
+> Part of the **APOBOMITOS** line — the measurement of the lipid-transport
 > proteins — at [panmitos.com](https://panmitos.com/).
-## The claim, in one line
 
-The raw ApoB-100 sequence, read and back-translated through the genetic code into DNA, measures a **spectral gap of
-−0.085** (disordered). After an additive, non-destructive fold through the
-**5-D SPIRAL**, every strand of **hybrid DNA** measures **positive** (ordered).
+## What we did — and did not
+
+We did three things, and nothing more:
+
+1. **Back-translated** the ApoB-100 amino-acid sequence into DNA through the
+   standard genetic code.
+2. **Measured** the spectral gap — the signed real part of the second
+   eigenvalue of the strand's 4×4 base-transition matrix.
+3. **Folded** the strand through an additive, non-destructive 5-D spiral, and
+   released the result.
+
+We did **not** solve ApoB's structure. A spectral gap is a number. What a
+positive spectral gap means in a cell is an open question — and it is the
+question this repository hands to you.
+
+## The numbers
+
+The raw sequence, back-translated to DNA, measures a **spectral gap of −0.085**
+(the "before"). After the fold, every strand of hybrid DNA measures **positive**
+(the "after"): **+0.029 to +0.187**.
 
 You don't have to take our word for it. Run one script.
 
 ## Verify it yourself
 
 ```
-python verify.py data/apob_base.dna        # → −0.085  (disordered)
-python verify.py data/strands/folded.dna   # → +0.155  (ordered)
-python verify.py data/strands/working.dna  # → +0.187  (ordered)
+python verify.py data/apob_base.dna        # → −0.085  (before)
+python verify.py data/strands/folded.dna   # → +0.155  (after)
+python verify.py data/strands/working.dna  # → +0.187  (after)
 ```
 
 `verify.py` needs only `numpy`. It computes the spectral gap — the signed real
 part of the second eigenvalue of the DNA strand's 4×4 base-transition matrix —
 a value that is zero for random sequence and nonzero for structure.
 
+## What to test
+
+The strands are finished DNA sequences. Print the letters and synthesize them.
+The specific test:
+
+- Synthesize the folded strand, express it alongside the base strand.
+- Measure what changes — LDL assembly, cholesterol binding, solubility.
+- **We predict a shift. We do not claim it works. The cell reports.**
+
+## The one claim that verifies itself
+
+Independently, we encode data into DNA and decode it back losslessly —
+GC-balanced, homopolymer-limited, error-corrected. Encode → synthesize →
+sequence → decode == original. That claim is falsifiable in a day and needs no
+biology to cooperate.
+
 ## What's in this repo
 
-- `data/apob_base.dna` — the raw sequence, read and back-translated into DNA (the "before").
-- `data/strands/*.dna` — the corrected strands (the "after"), one file each.
+- `data/apob_base.dna` — the back-translated sequence (the "before").
+- `data/strands/*.dna` — the folded strands (the "after"), one file each.
 - `data/strands.json` — full metadata for all 13 products.
 - `hashes.txt` — the 13 SHA-256 hashes (prior-art anchor, see below).
 - `verify.py` — the spectral-gap computation, free of any proprietary code.
@@ -78,7 +113,7 @@ Every strand is **hybrid DNA** — never the unaltered original. No strand is
 standard or original; each is a one-of-one hybrid, sealed with the moonlight.
 
 This is a **measurement, not a treatment** — a spectral reading of a protein's
-structure, released for independent verification.
+sequence, released for independent verification.
 
 ## Prior art + attribution
 
